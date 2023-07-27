@@ -53,7 +53,7 @@ while True:
     message_bytes = struct.unpack_from(TINY_CODE_READER_MESSAGE_FORMAT, read_data, TINY_CODE_READER_MESSAGE_OFFSET)
 
     if message_length > 0:
-        message_string = bytearray(message_bytes).decode("utf-8")
+        message_string = bytearray(message_bytes)[0:message_length].decode("utf-8")
         is_same = (message_string == last_message_string)
         last_message_string = message_string
         current_time = time.monotonic()
