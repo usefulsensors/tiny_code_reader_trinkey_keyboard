@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2023 Pete Warden
+# SPDX-License-Identifier: Apache-2.0
+#
 # Example of accessing the Tiny Code Reader from Useful Sensors on a Trinkey
 # using CircuitPython. See https://usfl.ink/tcr_dev for the full developer guide.
 
