@@ -95,7 +95,7 @@ the script:
 ```python
 while True:
     print(i2c.scan())
-    time.sleep(PERSON_SENSOR_DELAY)
+    time.sleep(TINY_CODE_READER_DELAY)
 ```
 
 This will display which I2C devices are available in the logs. You want to make
